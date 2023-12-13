@@ -46,8 +46,12 @@ def sim(num_sim):
 
     return stayer_wins, switcher_wins
 
+# edit this to perform any number of simulations
+num_sim = 1000
 
-stayer_wins, switcher_wins = sim(1000)
+# calling the simulator function to do the simulations
+stayer_wins, switcher_wins = sim(num_sim)
 
+print(f'number of games/simulations played: {num_sim}')
 print(f'Stayer wins:{stayer_wins}')
 print(f'Switcher wins:{switcher_wins}')

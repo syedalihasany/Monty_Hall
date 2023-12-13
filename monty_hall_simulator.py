@@ -52,6 +52,8 @@ num_sim = 1000
 # calling the simulator function to do the simulations
 stayer_wins, switcher_wins = sim(num_sim)
 
-print(f'number of games/simulations played: {num_sim}')
+print(f'Number of games/simulations played: {num_sim}')
 print(f'Stayer wins:{stayer_wins}')
 print(f'Switcher wins:{switcher_wins}')
+print(f'Stayer win ratio: {float(stayer_wins/num_sim)}')
+print(f'Switcher win ratio: {float(switcher_wins/num_sim)}')
